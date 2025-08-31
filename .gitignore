@@ -1,3 +1,29 @@
+# Bazel build output
+bazel-*
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+
+# Symlinks Bazel creates per-workspace
+bazel-*/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Common IDE/editor junk
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+# MacOS / Linux / Windows junk
+.DS_Store
+Thumbs.db
+
+
 # Compiled class file
 *.class
 
