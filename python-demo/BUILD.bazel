@@ -1,0 +1,8 @@
+load("@rules_python//python:pip.bzl", "compile_pip_requirements")
+
+# Generate a pinned lock file from requirements.in
+compile_pip_requirements(
+    name = "reqs",
+    requirements_in = "requirements.in",
+    requirements_txt = "requirements_lock_3_11.txt",
+)
